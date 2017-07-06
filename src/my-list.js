@@ -1,6 +1,7 @@
-  class MyList extends Polymer.Element {
-      static get is() {
-          return 'my-list';
-      }
-  }
-  customElements.define('my-list', MyList);
+Polymer({
+    is: 'my-list',
+    behaviors: [Polymer.NoteAppBehavior],
+    signIn: function () {
+        this.$.auth.signInWithPopup();
+    }
+});

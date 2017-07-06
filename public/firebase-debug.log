@@ -1,0 +1,28 @@
+[debug] [2017-06-14T22:18:08.277Z] ----------------------------------------------------------------------
+[debug] [2017-06-14T22:18:08.281Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-06-14T22:18:08.282Z] CLI Version:  3.9.1
+[debug] [2017-06-14T22:18:08.282Z] Platform:     darwin
+[debug] [2017-06-14T22:18:08.282Z] Node Version: v6.9.4
+[debug] [2017-06-14T22:18:08.283Z] Time:         Wed Jun 14 2017 16:18:08 GMT-0600 (MDT)
+[debug] [2017-06-14T22:18:08.283Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-14T22:18:08.304Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-14T22:18:08.304Z] > authorizing via signed-in user
+[debug] [2017-06-14T22:18:08.308Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/myregistry-1a1a3  
+ Wed Jun 14 2017 16:18:08 GMT-0600 (MDT)
+[debug] [2017-06-14T22:18:08.957Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-14T22:18:08.959Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/myregistry-1a1a3/tokens  
+ Wed Jun 14 2017 16:18:08 GMT-0600 (MDT)
+[debug] [2017-06-14T22:18:09.492Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/gavinfarnsworth/Desktop/Development/myregistry'...
+[info] 
+[debug] [2017-06-14T22:18:09.498Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/myregistry-1a1a3  
+ Wed Jun 14 2017 16:18:09 GMT-0600 (MDT)
+[debug] [2017-06-14T22:18:10.287Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-14T22:18:10.288Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/491724740214/clients/_:getWebAppConfig  
+ Wed Jun 14 2017 16:18:10 GMT-0600 (MDT)
+[debug] [2017-06-14T22:18:11.230Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
