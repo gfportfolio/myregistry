@@ -1,3 +1,4 @@
+@customElement('my-list')
 class MyList extends Polymer.Element {
     behaviors: [Polymer.NoteAppBehavior]
     static get is() {

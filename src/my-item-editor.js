@@ -1,1 +1,3 @@
-//# sourceMappingURL=my-item-editor.js.map
+Polymer({
+    is: 'my-item-editor'
+})

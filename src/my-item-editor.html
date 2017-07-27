@@ -1,0 +1,92 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+
+<dom-module id="my-item-editor">
+    <template>
+        <style>
+            paper-input {
+                max-width: 400px;
+                margin: auto;
+            }
+
+            iron-icon,
+            div[suffix] {
+                color: hsl(0, 0%, 50%);
+                margin-right: 12px;
+            }
+
+            .paper-card {
+                padding: 24px;
+                margin: 36px;
+                box-sizing: border-box;
+                width: auto;
+                display: block;
+                overflow: auto;
+            }
+
+            .buttons {
+                overflow: auto;
+                float: right;
+                padding-top: 16px;
+            }
+
+            .buttons>paper-button {
+                margin: 8px;
+            }
+
+            paper-button.indigo {
+                background-color: var(--paper-indigo-500);
+                color: white;
+                --paper-button-raised-keyboard-focus: {
+                    background-color: var(--paper-pink-a200) !important;
+                    color: white !important;
+                }
+                ;
+            }
+
+            paper-button.green {
+                background-color: var(--paper-red-500);
+                color: white;
+            }
+
+            paper-button.green[active] {
+                background-color: var(--paper-green-500);
+            }
+
+            paper-button.red {
+                background-color: var(--paper-red-500);
+                color: white;
+            }
+
+            paper-button.disabled {
+                color: white;
+            }
+        </style>
+        <paper-card class="paper-card">
+            <h2 id="title">New Item</h2>
+            <paper-input id="item-name" always-float-label label="Item Name" requird auto-validate error-message="Required">
+            </paper-input>
+            <paper-input id="item-url" always-float-label label="Item Url">
+            </paper-input>
+            <paper-input id="item-count" always-float-label label="Item Count" requird auto-validate error-message="Required" type="number">
+            </paper-input>
+            <paper-input id="item-size" always-float-label label="Item Size">
+            </paper-input>
+            <paper-input id="item-for" always-float-label label="Item For">
+            </paper-input>
+            <div id="buttons" class="buttons">
+                <paper-button id="delete" raised class="red">Delete</paper-button>
+                <paper-button id="received" toggles raised class="green">Received</paper-button>
+                <paper-button id="cancel" raised class="red">Cancel</paper-button>
+                <paper-button id="save" raised class="indigo">Save</paper-button>
+            </div>
+
+
+        </paper-card>
+    </template>
+    <script src='my-item-editor.js'>
+    </script>
+</dom-module>
